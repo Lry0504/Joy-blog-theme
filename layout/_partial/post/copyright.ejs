@@ -1,0 +1,14 @@
+<blockquote class="post-copyright">
+    <div class="content">
+        <%- partial('updated') %>
+        <% if(theme.postMessage) {%>
+          原文链接：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
+        <% } %>
+    </div>
+    <footer>
+        <div onclick="location.href='<%- config.url %>/about/'">
+            <img src="<%- url_for(theme.avatar) %>" alt="<%- config.author %>">
+            <a><%- config.author %></a>
+        </div>
+    </footer>
+</blockquote>
