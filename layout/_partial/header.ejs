@@ -41,16 +41,23 @@
                 <% } else { %>
                     <h1 id="pagetitle" class="archivestitle"></h1>
                     <script>
-                        if(location.href.indexOf('about')!=-1){
-                            pagetitle.textContent = '<%= theme.aboutitle %>';
-                        }else if(location.href.indexOf('tags')!=-1||location.href.indexOf('categories')!=-1){
-                            var a=location.href.substring(location.href.length-5,location.href.length-1);
-                            if(a==='tags'){
-                                pagetitle.textContent = '<%= theme.tagstitle %>';
-                            }else if(a==='ries'){
-                                pagetitle.textContent = '<%= theme.categoriestitle %>';
-                            }
-                        }
+                      var arr = location.href.split("Joy-blog/");
+                      switch (arr[1]) {
+                        case 'about/':
+                          pagetitle.textContent = '<%= theme.aboutitle %>';
+                          break;
+                        case 'tags/':
+                          pagetitle.textContent = '<%= theme.tagstitle %>';
+                          break;
+                        case 'categories/':
+                          pagetitle.textContent = '<%= theme.categoriestitle %>';
+                          break;
+                        case 'artitalk/':
+                          pagetitle.textContent = '<%= theme.artitalktitle %>';
+                          break;
+                        default:
+                          break;
+                      }
                     </script>
                 <% } %>
             </h5>

@@ -13,6 +13,7 @@
 		title = $('.header-title'),
 		loading = $('#loading'),
 		isPost = location.href.indexOf('post') !== -1,
+    isArtitalk = location.href.indexOf('artitalk') !== -1,
 		animate = w.requestAnimationFrame,
 		scrollSpeed = 200 / (1000 / 60),
 		forEach = Array.prototype.forEach,
@@ -438,6 +439,9 @@
 	})
 	/* 页面加载第一个执行的事件 */
 	w.addEventListener('DOMContentLoaded', function() {
+    if (isArtitalk) {
+      main.classList.add('menuoff')
+    }
 		const top = docEl.scrollTop
 		Blog.toc.fixed(top)
 		Blog.toc.actived(top)

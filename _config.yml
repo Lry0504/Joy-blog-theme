@@ -20,7 +20,7 @@ menu:
     url: /tags
   heartbeat:
     text: 圈子
-    url: /life
+    url: /artitalk
   image:
     text: 相册
     url: /gallery
@@ -72,6 +72,9 @@ tagstitle: Tags
 # 分类页标题
 categoriestitle: Categories
 
+# 圈子页标题
+artitalktitle: 圈子
+
 # 关于页标题
 aboutitle: About myself
 
@@ -82,6 +85,7 @@ color: '#77AAFF'
 tags_title: 标签
 archives_title: 归档
 categories_title: 分类
+artitalk_title: 圈子
 
 # 文章截断
 excerpt_render: true
@@ -176,14 +180,22 @@ gitalk: false
 # Valine Comment system. https://valine.js.org
 valine:
   enable: true # 如果你想使用valine，请将值设置为 true
-  appId: wQrz3akctyLkzYGySxn1FgY8-gzGzoHsz
-  appKey: hYgkRpoK57mCsRlCFtp7Qor2
+  appId: BYSfKXO7eaaqTbA6NfbS9z62-MdYXbMMI
+  appKey: BjBVe7OxLYmKkrhuEsodMFHh
   notify: false # Mail notify
   verify: false # Verify code
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   placeholder: 欢迎留言~~ 记得填写昵称与邮箱，方便联系您哦(#^.^#) # Comment Box placeholder
   guest_info: ['nick', 'mail'] # Comment header info
   pageSize: 10 # comment list page size
+
+# artitalk system
+artitalk:
+  enable: true
+  appId: BYSfKXO7eaaqTbA6NfbS9z62-MdYXbMMI
+  appKey: BjBVe7OxLYmKkrhuEsodMFHh
+  username: Dog Lai
+  shuoPla: '想记录什么心情呢~'
 
 # 规范网址
 # 让搜索引擎重定向你的不同域名、不同子域、同域不同目录的站点到你期望的路径

@@ -1,0 +1,13 @@
+<% if (theme.artitalk.enable ){ %>
+  <div id="artitalk_main"></div>
+  <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+  <script>
+    new Artitalk({
+      appId: "<%= theme.artitalk.appId %>",
+      appKey: "<%= theme.artitalk.appKey %>",
+      username: "<%= theme.artitalk.username %>",
+      shuoPla: "<%= theme.artitalk.shuoPla %>",
+      avatarPla: "<%= theme.avatar %>",
+    })
+  </script>
+<% } %>
