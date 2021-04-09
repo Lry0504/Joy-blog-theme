@@ -526,7 +526,7 @@
 		},
 		false
 	)
-	if (w.BLOG.SHARE && isPost) {
+	if (w.BLOG.SHARE && !isPost) {
 		Blog.share()
 	}
 	if (w.BLOG.REWARD) {
