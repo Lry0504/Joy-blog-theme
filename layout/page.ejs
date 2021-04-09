@@ -8,7 +8,9 @@ page.slug = 'hexo-page-' + page.path.replace(/\/index\.html$/,'').split('/').joi
 %>
 <div class="container body-wrap">
     <article class="page-article fade" itemprop="blogPage">
-      <% if(page.title == 'artitalk'){ %>
+      <% if(page.type === "photos"){ %>
+        <%- partial('_partial/photos') %>
+      <% } else if(page.title == 'artitalk'){ %>
         <%- partial('_partial/plugins/artitalk') %>
       <% } else if(theme.about){ %>
             <div class="card page-about-me flex-row">

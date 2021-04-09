@@ -23,7 +23,7 @@ menu:
     url: /artitalk
   image:
     text: 相册
-    url: /gallery
+    url: /photos
   paper-plane:
     text: 关 于
     url: /about
@@ -75,6 +75,9 @@ categoriestitle: Categories
 # 圈子页标题
 artitalktitle: 圈子
 
+# 相册标题
+photostitle: 相册
+
 # 关于页标题
 aboutitle: About myself
 
@@ -86,6 +89,7 @@ tags_title: 标签
 archives_title: 归档
 categories_title: 分类
 artitalk_title: 圈子
+photos_title: 相册
 
 # 文章截断
 excerpt_render: true

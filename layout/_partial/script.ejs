@@ -18,6 +18,10 @@ var BLOG = { ROOT: '<%= config.root %>', SHARE: <%- theme.share %>, REWARD: <%- 
 <!-- 动画&配置 -->
 <script src="<%- url_for(theme_js('/js/script', cache)) %>" ></script>
 
+<!-- 相册&配置 -->
+<script src="<%- url_for(theme_js('/js/photoswipe.min.js?v=3.0', cache)) %>" ></script>
+<script src="<%- url_for(theme_js('/js/photoswipe-ui-default.min.js?v=3.0', cache)) %>"></script>
+
 <!-- 脚本管理 -->
 <%- partial('switch') %>
 
