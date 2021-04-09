@@ -25,6 +25,10 @@
     &.toc {
         margin-right: 21% !important;
     }
+    .icon-heart {
+      color: #ff0000;
+      animation: heartbreak 1.33s ease-in-out infinite;
+    }
 }
 
 .power {
@@ -58,4 +62,11 @@
     .license {
         display: none;
     }
+}
+
+@keyframes heartbreak {
+  0%,100%{transform:scale(1);}
+  10%,30%{transform:scale(0.9);}
+  20%,40%,60%,80%{transform:scale(1.1);}
+  50%,70%{transform:scale(1.1);}
 }
