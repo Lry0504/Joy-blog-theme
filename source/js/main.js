@@ -136,7 +136,7 @@
 				headerH = header.clientHeight,
 				titles = $('#post-content').querySelectorAll('h1, h2, h3, h4, h5, h6')
 			toc
-				.querySelector(`a[href="#${titles[0].id}"]`)
+				.querySelector(`a[href="#${encodeURI(titles[0].id)}"]`)
 				.parentNode.classList.add('active')
 
 			main.classList.add('tocshow')
@@ -156,7 +156,7 @@
 					for (let i = 0, len = titles.length; i < len; i++) {
 						if (top > offset(titles[i]).y - headerH - 5) {
 							toc.querySelector('li.active').classList.remove('active')
-							const active = toc.querySelector(`a[href="#${titles[i].id}"]`)
+							const active = toc.querySelector(`a[href="#${encodeURI(titles[i].id)}"]`)
 								.parentNode
 							active.classList.add('active')
 						}
@@ -164,7 +164,7 @@
 					if (top < offset(titles[0]).y) {
 						toc.querySelector('li.active').classList.remove('active')
 						toc
-							.querySelector(`a[href="#${titles[0].id}"]`)
+							.querySelector(`a[href="#${encodeURI(titles[0].id)}"]`)
 							.parentNode.classList.add('active')
 					}
 				}
