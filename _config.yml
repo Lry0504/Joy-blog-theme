@@ -214,7 +214,13 @@ since_year: 2021
 site: lry61.cn/Joy-blog
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 阳光灿烂活泼可爱，喜欢小猫小狗，喜欢听民谣，酷爱旅行，电子产品发烧友...
+about:
+  enable: true
+  sex: Male
+  hobby: Music、Car、Game...
+  email: lry885175073@163.com
+  more: 更多详情信息，移步
+
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:

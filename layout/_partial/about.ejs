@@ -1,0 +1,12 @@
+<div class="card page-about-me flex-row">
+  <a href="/" class="avatar waves-effect waves-circle waves-light"><%- image_tag(theme.avatar) %></a>
+  <div class="content flex-col">
+      <p><strong><%- config.author %></strong></p>
+      <p><em><%- config.subtitle %></em></p>
+      <p>sex:  <%- theme.about.sex %></p>
+      <p>age:  <%- new Date().getFullYear() - 1996 %></p>
+      <p>hobby:  <%- theme.about.hobby %></p>
+      <p>email:  <%- theme.about.email %></p>
+      <p><%- theme.about.more %><a class="about-url" href="https://lry61.cn/about">自我介绍</a></p>
+  </div>
+</div>
