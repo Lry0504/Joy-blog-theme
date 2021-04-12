@@ -2,7 +2,7 @@
     <div class="content">
         <%- partial('updated') %>
         <% if(theme.postMessage) {%>
-          原文链接：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
+          原文链接：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- decodeURI(page.permalink.replace(/index\.html$/, '')) %></a>
         <% } %>
     </div>
     <footer>
