@@ -284,22 +284,24 @@
 .post-content {
     text-align: left;
     font-family: @font-content;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-bottom: 10px;
     line-height: 1.8;
     font-size: 120%;
     a:not(.post-more) {
         .hoverAnchor(@accentColor);
     }
+    // >.highlight,
+    // >.image-bubble,
+    // >pre {
+    //     margin-left: -35px;
+    //     margin-right: -35px;
+    // }
     >.highlight,
-    >.image-bubble,
     >pre {
-        margin-left: -35px;
-        margin-right: -35px;
-    }
-    >.highlight,
-    >pre {
-        padding: 10px 35px 20px 35px;
+        // padding: 10px 35px 20px 35px;
+        padding: 0 10px;
     }
     .image-bubble {
         margin-top: 20px;
