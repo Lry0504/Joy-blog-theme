@@ -173,6 +173,9 @@
 		hideOnMask: [],
 		modal: function(target) {
 			this.$modal = $(target)
+      if (this.$modal === null) {
+        return false;
+      }
 			this.$off = this.$modal.querySelector('.close')
 			const mythis = this
 			this.show = function() {
@@ -245,6 +248,9 @@
 		reward: function() {
 			const modal = new this.modal('#reward')
 			const $rewardCode = $('#rewardCode')
+      if ($rewardCode === null) {
+        return false;
+      }
 			const $rewardToggle = $('#rewardToggle')
 			let tipFirstt = false,
 				tipPosition = -1
