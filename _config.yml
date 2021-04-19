@@ -181,6 +181,14 @@ gitalk: false
 # client_id: xxx
 # client_secret: xxx
 
+# Online contact
+daovoice:  # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
+  enable: true # 是否开启在线客服聊天
+  appid: '68f0bc04'  # 应用ID设置
+  user_id: "NO_89757" # 必填: 该用户在您系统上的唯一ID
+  name: 'Dog Lai' # 选填 用户名
+  email: "lry885175073@163.com" # 选填:  该用户在您系统上的主邮箱
+
 # Valine Comment system. https://valine.js.org
 valine:
   enable: true # 如果你想使用valine，请将值设置为 true
