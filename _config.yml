@@ -204,6 +204,7 @@ valine:
 # artitalk system
 artitalk:
   enable: true
+  pageSize: 10
   appId: BYSfKXO7eaaqTbA6NfbS9z62-MdYXbMMI
   appKey: BjBVe7OxLYmKkrhuEsodMFHh
   username: Dog Lai
